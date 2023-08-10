@@ -9,6 +9,7 @@ function App() {
     setData(res.data?.message);
   }
   useEffect(() => {
+    
     fetchData();
   }, [])
   return (
