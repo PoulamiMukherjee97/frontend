@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 import axios from 'axios';
 
 function App() {
-  const [data, setData] = useState('Data not received from backend');
+  const [data, setData] = useState('Data no longer received from backend');
   const fetchData = async () => {
     try{
       const res = await axios.get(`${process.env.REACT_APP_URL}`);
